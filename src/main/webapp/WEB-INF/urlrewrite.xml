@@ -15,15 +15,15 @@
         <note>
             Redirect from concrete HTML to view path
         </note>
-        <from>^/index.html(.*)</from>
+        <from>^/index.jsp(.*)</from>
         <to type="redirect">view</to>
     </rule>
     <rule>
         <note>
-            Enable client side routing by forwarding all frontend requests to index.html
+            Enable client side routing by forwarding all frontend requests to index.jsp
         </note>
         <from>^/view/?(.*)</from>
-        <to>/index.html</to>
+        <to>/index.jsp</to>
     </rule>
 
 </urlrewrite>
